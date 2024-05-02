@@ -1,9 +1,19 @@
+import { Dashboard } from "./pages/Dashboard";
+import { Home } from "./pages/Home";
+import { Login } from "./pages/Login";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1 className="text-2xl">Tailwind React and typescript</h1>
-    </div>
+    <Router>
+      <div className="bg-[#0C111D] min-h-screen text-white overflow-x-hidden">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
