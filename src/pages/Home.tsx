@@ -8,6 +8,10 @@ import girlDp1 from "../assets/images/pf-girl1.jpg"
 import girlDp2 from "../assets/images/pf-girl2.jpg"
 import { Footer } from '../components/Footer'
 import ipadImg from "../assets/images/IpadImg.png"
+import asset1VE from "../assets/images/asset1VE.png"
+import asset2VE from "../assets/images/asset2VE.png"
+import asset3VE from "../assets/images/asset3VE.png"
+import asset4VE from "../assets/images/asset4VE.png"
 
 export const Home = () => {
     const imgRef = useRef<HTMLImageElement>(null);
@@ -112,7 +116,7 @@ export const Home = () => {
                         <h2 className='text-xl md:text-4xl sm_laptop:text-5xl font-medium slide-in-bottom'>Our Best Features For the Seamless Result</h2>
                         <p className='text-xs md:text-base sm_laptop:text-lg slide-in-bottom'>Our user-friendly interface makes it easy to navigate the tool and find the features you need.</p>
                         <button className='bg-blue-500 py-2 px-4 md:py-3 md:px-8 rounded-lg md:rounded-xl slide-in-bottom max-md:text-xs'>Join the Beta</button>
-                        
+
                         <div className='flex items-center gap-x-4 md:pt-14 sm_laptop:pt-28 blur-to-clear max-md:hidden'>
                             <p className='md:text-5xl sm_laptop:text-7xl font-medium w-max'>125<span className='md:text-3xl sm_laptop:text-5xl font-medium'>+ k</span></p>
                             <div className='text-gray-500 md:text-base sm_laptop:text-lg font-medium leading-5 md:-mb-3 sm_laptop:-mb-5 relative'>
@@ -126,13 +130,13 @@ export const Home = () => {
                         <img className='grow-effect' src={ipadImg} alt="ipad mockup" />
                     </div>
                     <div ref={blurRef} className='flex items-center gap-x-2 opacity-0 md:hidden'>
-                            <p className='text-3xl font-medium w-max'>125<span className='font-medium text-lg'>+ k</span></p>
-                            <div className='text-gray-500 text-xs font-medium -mb-2 relative'>
-                                <p>users have already</p>
-                                <p>joined us.</p>
-                                <img className='absolute -top-full right-1/2' src={arrowImg} alt="arrow" />
-                            </div>
+                        <p className='text-3xl font-medium w-max'>125<span className='font-medium text-lg'>+ k</span></p>
+                        <div className='text-gray-500 text-xs font-medium -mb-2 relative'>
+                            <p>users have already</p>
+                            <p>joined us.</p>
+                            <img className='absolute -top-full right-1/2' src={arrowImg} alt="arrow" />
                         </div>
+                    </div>
                 </div>
 
                 <div ref={div2Ref} className='text-center md:py-10 sm_laptop:py-20 space-y-4 md:space-y-2'>
@@ -154,27 +158,39 @@ export const Home = () => {
                 </div>
 
                 <div ref={div5Ref} className='flex flex-col max-sm_laptop:gap-y-5 sm_laptop:flex-row w-full sm_laptop:justify-between mt-10'>
-                    <div className='sm_laptop:inline-block sm_laptop:w-3/5 bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-3 md:space-y-6 slide-to-right slide-up'>
+                    <div className='sm_laptop:inline-block md:h-[480px] sm_laptop:w-3/5 bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-3 md:space-y-6 slide-to-right slide-up'>
                         <h2 className='text-2xl md:text-4xl font-medium'>Easy Editing Tools</h2>
                         <p className='max-md:text-xs sm_laptop:w-7/12'>Our video editor includes a range of editing tools that are easy to use, even for beginners. You can trim, cut and splice your videos to create the perfect final product.</p>
                         <button className='bg-blue-500 py-2 px-4 md:py-3 md:px-8 rounded-lg md:rounded-xl max-md:text-xs'>Join the Beta</button>
+                        <div className='relative max-md:hidden grow-effect'>
+                            <img className='absolute w-3/4 md:w-1/2 top-5 md:-top-16 xl:-top-24 right-10 md:-right-2 opacity-80' src={asset1VE} alt="asset1" />
+                        </div>
                     </div>
 
-                    <div className='sm_laptop:inline-block sm_laptop:w-[38%] bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-left slide-up'>
+                    <div className='sm_laptop:inline-block md:h-96 sm_laptop:h-auto sm_laptop:w-[38%] bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-left slide-up'>
                         <h2 className='text-2xl md:text-3xl md:font-medium'>Export Options</h2>
                         <p className='max-md:text-xs'>Our tool supports a wide range of export options, including popular formats like MP4, AVI and MOV.</p>
+                        <div className='relative max-md:hidden grow-effect'>
+                            <img className='absolute opacity-80 w-2/3 -top-5 sm_laptop:top-16 sm_laptop:left-10 max-sm_laptop:w-2/5 max-sm_laptop:right-0' src={asset2VE} alt="asset2" />
+                        </div>
                     </div>
                 </div>
 
                 <div ref={div6Ref} className='flex flex-col max-sm_laptop:gap-y-5 sm_laptop:flex-row w-full sm_laptop:justify-between mt-5 md:mb-10 sm_laptop:mb-20'>
-                    <div className='sm_laptop:inline-block sm_laptop:w-[38%] bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-right slide-up'>
+                    <div className='sm_laptop:inline-block md:h-96 sm_laptop:h-auto sm_laptop:w-[38%] bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-right slide-up'>
                         <h2 className='text-2xl md:text-3xl md:font-medium'>Timeline</h2>
                         <p className='max-md:text-xs'>Our timeline allows you to easily arrange and sequence your video and audio clips, cut and trim them, and add transitions between them.</p>
+                        <div className='relative max-md:hidden grow-effect'>
+                            <img className='absolute max-sm_laptop:w-1/2 max-sm_laptop:right-0 opacity-80 sm_laptop:top-14' src={asset3VE} alt="asset3" />
+                        </div>
                     </div>
 
-                    <div className='sm_laptop:inline-block sm_laptop:w-3/5 bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-left slide-up'>
+                    <div className='sm_laptop:inline-block md:h-[480px] sm_laptop:w-3/5 bg-[#515366] bg-opacity-15 rounded-3xl p-5 md:p-10 space-y-2 slide-to-left slide-up'>
                         <h2 className='text-2xl md:text-3xl md:font-medium'>Visual Effects</h2>
                         <p className='max-md:text-xs'>Our video editing tool comes with a range of filters and effects that can add a professional touch to your videos. You can adjust the brightness, contrast, and saturation of your videos.</p>
+                        <div className='relative max-md:hidden grow-effect'>
+                            <img className='absolute opacity-80 w-1/2 max-sm_laptop:w-2/5 right-0 top-6' src={asset4VE} alt="asset4" />
+                        </div>
                     </div>
                 </div>
 
