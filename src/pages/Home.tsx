@@ -106,7 +106,7 @@ export const Home = () => {
                     </div>
                 </div>
 
-                <div className='image-container py-5 md:py-10 sm_laptop:py-20 pl-2 md:pl-14 sm_laptop:pl-28'>
+                <div className='image-container py-5 md:py-10 sm_laptop:py-20 pl-2 md:pl-14 sm_laptop:pl-28 min-h-52 md:min-h-[420px] sm_laptop:min-h-[600px]'>
                     <img ref={imgRef} className='rounded-3xl editor-image' src={editorImg} alt="editor" />
                 </div>
 
