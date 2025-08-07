@@ -1,6 +1,7 @@
 # Deepsify.com
 
-##Live Demo:
+## Live Demo:
+
 https://deepsify.vercel.app/
 
 This project is a fully responsive React application built with TypeScript and styled with Tailwind CSS. It consists of a landing page, a login page, and a dashboard.
